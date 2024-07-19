@@ -4,7 +4,7 @@
 }
 .topBar {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: black;
     align-items: center; /* Centraliza verticalmente */
     justify-content: center;
@@ -12,7 +12,22 @@
 .topBar h1{
     color: white;
 }
-
+.links{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.links img{
+    width: 3vh;
+    border-radius: 6px;
+    justify-content: center; /* Centraliza horizontalmente */
+    place-self: center;
+}
+.links a{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
 
 .content{
     display: flex;
@@ -31,13 +46,18 @@
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
     gap: 0.5vh;
+    background-color: black;
+    border-radius: 5px;
+    padding: 0px 0.7vw 0 0.7vw;
 }
 .itens img{
-    height: 30vh;
+    height: 15vh;
+    border-radius: 3px;
+    margin-top: 0.2vh;
 }
 .itens a{
     font-family: 'Lato', sans-serif;
     font-size: large;
     color: white;
-    
+    word-wrap:break-word;
 }
